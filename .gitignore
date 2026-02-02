@@ -1,0 +1,3 @@
+lua/plugins/theme.lua
+lua/plugins/lsp/formatters.lua
+lua/plugins/lsp/servers.lua
