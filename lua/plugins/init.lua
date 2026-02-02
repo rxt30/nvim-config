@@ -30,4 +30,5 @@ require('lazy').setup {
   require 'plugins.neo-tree',
   -- require("plugins.obsidian"),
   require 'plugins.typescript',
+  require 'plugins.colorizer',
 }
