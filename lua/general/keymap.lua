@@ -20,3 +20,15 @@ vim.keymap.set('n', '<leader>t', ':FloatermToggle<CR>', { desc = 'Open floating 
 -- Copy and paste to buffer
 vim.keymap.set({ 'n', 'x', 'o' }, 'Y', '"+y')
 vim.keymap.set({ 'n', 'x', 'o' }, 'P', '"+p')
+-- Session management
+vim.keymap.set('n', 'ss', require('mini.sessions').select, { desc = 'Select session' })
+vim.keymap.set('n', 'sd', function()
+  require('mini.sessions').select 'delete'
+end, { desc = 'Select session' })
+vim.keymap.set('n', 'sw', function()
+  local session_name = vim.fn.input 'Name for new session: '
+  if session_name == nil or session_name == '' then
+    return
+  end
+  require('mini.sessions').write(session_name)
+end, { desc = 'Write session' })
