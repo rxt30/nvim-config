@@ -31,4 +31,5 @@ require('lazy').setup {
   -- require("plugins.obsidian"),
   require 'plugins.typescript',
   require 'plugins.colorizer',
+  require 'plugins.ai',
 }
