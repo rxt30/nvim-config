@@ -55,6 +55,9 @@ return {
             vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { bufnr = event.buf })
           end, '[T]oggle Inlay [H]ints')
         end
+        if client and client:supports_method 'textDocument/completion' then
+          vim.lsp.completion.enable(true, client.id, event.buf, { autotrigger = true })
+        end
       end,
     })
     local capabilities = vim.lsp.protocol.make_client_capabilities()

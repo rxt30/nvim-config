@@ -21,7 +21,6 @@ require('lazy').setup {
   require 'plugins.treesitter',
   require 'plugins.lualine',
   require 'plugins.window-picker',
-  require 'plugins.autocompletion',
   require 'plugins.copilot',
   require 'plugins.gitlab',
   require 'plugins.gitsigns',

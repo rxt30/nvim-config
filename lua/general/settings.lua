@@ -19,3 +19,5 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.sessionoptions = 'resize,tabpages,winsize'
+vim.opt.completeopt = { 'menuone', 'noselect', 'popup' }
+vim.opt.autocomplete = true
