@@ -21,3 +21,5 @@ vim.opt.scrolloff = 10
 vim.opt.sessionoptions = 'resize,tabpages,winsize'
 vim.opt.completeopt = { 'menuone', 'noselect', 'popup' }
 vim.opt.autocomplete = true
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
