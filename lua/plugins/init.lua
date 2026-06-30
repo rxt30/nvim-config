@@ -32,5 +32,6 @@ require('lazy').setup {
   require 'plugins.colorizer',
   require 'plugins.ai',
   require 'plugins.codediff',
+  require 'plugins.sidekick',
   require 'plugins.blink',
 }

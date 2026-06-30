@@ -32,3 +32,10 @@ vim.keymap.set('n', 'sw', function()
   end
   require('mini.sessions').write(session_name)
 end, { desc = 'Write session' })
+
+-- Telescope
+vim.keymap.set('n', '<leader>sw', require('telescope/builtin').grep_string, { desc = '[S]earch current [W]ord' })
+vim.keymap.set('n', '<leader>sg', require('telescope/builtin').live_grep, { desc = '[S]earch current [W]ord' })
+
+-- Sidekick
+vim.keymap.set('n', '<tab>', require('sidekick').nes_jump_or_apply)

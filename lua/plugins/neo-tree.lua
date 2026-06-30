@@ -9,6 +9,7 @@ return {
   cmd = 'Neotree',
   keys = {
     { '<C-n>', ':Neotree toggle<CR>', desc = 'NeoTree toggle', silent = true },
+    { 'zk', ':Neotree position=float dir=~/notes<CR>', desc = 'Open Zettelkasten', silent = true },
   },
   opts = {
     filesystem = {

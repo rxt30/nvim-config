@@ -5,7 +5,7 @@ return {
   ---@module blink.cmp
   ---@type blink.cmp.config
   opts = {
-    completion = { documentation = { auto_show = true } },
+    completion = { list = { selection = { preselect = false } }, documentation = { auto_show = true } },
     keymap = {
       preset = 'default',
       ['<CR>'] = { 'accept', 'fallback' },
